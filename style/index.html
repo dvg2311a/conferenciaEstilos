@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Documento HTML</title>
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #141433;
+        }
+
+        .heading,
+        .parrafo,
+        .info {
+            color: #fff;
+            text-align: center;
+            margin: 20px 0;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        a {
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            margin: 45%;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+        }
+
+
+        .lista {
+            color: #fff;
+            margin: 20px 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .textos,
+        .citas,
+        .citas a {
+            color: #fff;
+            margin: 20px;
+            text-align: justify;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: #20be20 1px solid;
+
+            a:hover {
+                color: cadetblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="../index_one.html">
+        <img src="/img-cards/card-2.jpg" alt="" style="width: 200px;" class="album">
+    </a>
+    <hr>
+
+    <!-- <section>
+        <a href="#marcadorDeEnlaces">Ir a los Enlaces</a>
+    </section> -->
+
+    <!-- <hr>
+    <h1 class="heading">Encabezado Nivel 1</h1>
+    <h2 class="heading">Encabezado Nivel 2</h2>
+    <h3 class="heading">Encabezado Nivel 3</h3>
+    <h4 class="heading">Encabezado Nivel 4</h4>
+    <h5 class="heading">Encabezado Nivel 5</h5>
+    <h6 class="heading">Encabezado Nivel 6</h6>
+
+    <hr>
+
+    <p class="info">Los atributos siempre van en la <span>Etiqueta de apertura</span></p>
+    <hr>
+    <p class="parrafo">Este es un párrafo usando la etiqueta "p", <br>
+        además de un salto de línea usando la etiqueta "br"
+    </p> -->
+
+
+
+    <hr>
+    <div class="textos" aria-describedby="formatosDeTexto">
+        <b>Texto en negrita</b> <br>
+        <strong>Texto importante</strong> <br>
+        <i>Texto en cursiva</i> <br>
+        <em>Texto enfatizado</em> <br>
+        <mark>Texto marcado</mark> <br>
+        <small>Texto pequeño</small> <br>
+        <del>Texto eliminado</del> <br>
+        <ins>Texto insertado</ins> <br>
+        <span>Texto<sub>subíndice</sub></span> <br>
+        <span>Texto<sup> superíndice</sup> </span> <br>
+        <u>Texto subrayado</u> <br>
+        <pre>
+
+
+
+        </pre>
+        <code>Codigo de programacion</code> <br>
+        <kbd>Formato de entrada de texto</kbd> <br>
+        <samp>Formato de salida de texto</samp> <br>
+        <var>Formato para variables de programación</var>
+
+        <pre>
+            Texto preformateado
+            que conserva los saltos de línea
+            y tiene fuente monoespaciada
+        </pre>
+    </div>
+
+    <hr>
+
+    <div class="citas" aria-describedby="citas">
+        <address>
+            Frente al parque central de San Juan de Oriente, Masaya, Nicaragua
+        </address>
+
+
+        <p><abbr title="NASA">NASA</abbr>: Administración Nacional de Areonáutica y el Espacio </p>
+        <p><abbr title="ESA">ESA</abbr>: Agencia Espacial Europea</p>
+
+
+        <blockquote cite="https://es.wikipedia.org/wiki/Forrest_Gump">
+            <p>La vida es como una caja de bombones, nunca sabes lo que te va a tocar</p>
+            <footer>Forrest Gump</footer>
+        </blockquote>
+
+        <p>
+            <q cite="https://es.wikipedia.org/wiki/Winston_Churchill">
+                El éxito consiste en pasar de fracaso en fracaso sin perder entusiasmo.
+            </q> - Winston Churchill
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="citas" id="marcadorDeEnlaces">
+        <h2>Enlaces</h2>
+        <!-- Enlace a una página externa -->
+        <!-- <a href="https://www.youtube.com/" target="_blank">YouTube</a> -->
+        <!-- Enlace a una página interna -->
+        <!-- <a href="/html/register.html" target="_self">Registro</a> -->
+        <!-- </div> -->
+
+
+
+
+        <h2 class="heading">Formularios</h2>
+
+        <form action="">
+        </form>
+
+
+        <!-- <h2 class="heading">Ecommerce + Turismo</h2>
+    <ol class="lista">
+        <li><b> <a href="/html/index.html">Landing</a></b>
+            <ul>
+                <li>Información sobre San Juan De Oriente</li>
+                <li>Productos Estrella de San Juan De Oriente <sup>Hagase como un libro</sup></li>
+                <li>Mapa Interactivo</li>
+                <li>Login y Autenticación</li>
+            </ul>
+        </li>
+
+        <li> <b>Ecommerce</b>
+            <ul>
+                <li>Filtro
+                    <ol>
+                        <li>Categorías
+                            <ul>
+                                <li>Más Caros</li>
+                                <li>Más Baratos</li>
+                                <li>Descuento</li>
+                                <li>Artesano</li>
+                                <li>Valor Histórico</li>
+                            </ul>
+                        </li>
+
+                    </ol>
+                </li>
+                <li>Carrito</li>
+                <li>Favoritos</li>
+                <li>Productos destacados</li>
+                <li>IA con la capacidad de personalizar las compras</li>
+                <li>ChatBot</li>
+                <li>Chat directo</li>
+                <li>Comunidades</li>
+                <li>Productos personalizados</li>
+            </ul>
+        </li>
+        
+        <li>Producto
+            <ul>
+                <li>Nombre</li>
+                <li>Historia</li>
+                <li>Imagen</li>
+                <li>Precio</li>
+                <li>Categoría</li>
+                <li>Botón de compra</li>
+                <li>Cantidad</li>
+                <li>Botón de Favoritos</li>
+                <li>Artesano</li>
+                <li>Ubicación</li>
+                <li>Botón de reservación</li>
+            </ul>
+        </li>
+        <li><b>Roles</b>
+            <ol>
+                <li><i>Artesano</i>
+                    <ul>
+                        <li>Perfil
+                            <ol>
+                                <li>Nombre y apellido</li>
+                                <li>Fecha de nacimiento</li>
+                                <li>Dirección</li>
+                                <li>Correo</li>
+                                <li>Contraseña</li>
+                                <li>Número de teléfono</li>
+                                <li>Tienda
+                                    <ul>
+                                        <li>Código de la tienda</li>
+                                        <li>Nombre de la tienda</li>
+                                        <li>Ubicación</li>
+                                        <li>Productos</li>
+                                    </ul>
+                                </li>
+                                <li>Producto más vendido</li>
+                                <li>Sector de la artesanía</li>
+                                <li>Ubicación</li>
+                                <li>Historia</li>
+                            </ol>
+                        </li>
+                        <li>Productos
+                            <ol>
+                                <li>Nombre</li>
+                                <li>Precio</li>
+                                <li>Descripción</li>
+                                <li>Imagen</li>
+                                <li>Validación de la calidad de las imagenes del producto</li>
+                                <li>Valoración</li>
+                                <li>Comentarios</li>
+                            </ol>
+                        </li>
+                        <li>Inventario</li>
+                        <li>Historial de Ventas</li>
+                        <li>Historial de productos reservados</li>
+                    </ul>
+                </li>
+
+                <li><i>Comprador</i>
+                    <ul>
+                        <li>Nombres y apellidos</li>
+                        <li>Pic</li>
+                        <li>Dirección</li>
+                        <li>Correo</li>
+                        <li>Contraseña</li>
+                        <li>Número de teléfono</li>
+                        <li>Historial de compras</li>
+                        <li>Productos favoritos</li>
+                        <li>Departamento</li>
+                        <li>Municipio</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li>Proceso de Pago
+            <ul>
+                <li>Historial de Compras</li>
+                <li>Método de pago</li>
+                <li>Total</li>
+                <li>Confirmación de compra</li>
+                <li>Método de envío
+                    <ol>
+                        <li>Retiro en tienda</li>
+                        <li>Envío en línea
+                            <ul>
+                                <li>Pedidos YA</li>
+                                <li>Cargotrans</li>
+                                <li>Tizo</li>
+                            </ul>
+                        </li>
+
+                    </ol>
+                </li>
+                <li>Productos seleccionados</li>
+                <li><i>Factura</i>
+                    <ul>
+                        <li>Nombre del comprador</li>
+                        <li>Nombre del vendedor</li>
+                        <li>Fecha de compra</li>
+                        <li>Productos</li>
+                        <li>Cantidad</li>
+                        <li>Subtotal</li>
+                        <li>IVA</li>
+                        <li>Total</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+    </ol> -->
+
+
+</body>
+
+</html>
