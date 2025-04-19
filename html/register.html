@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c002ea6838.js" crossorigin="anonymous"></script>
+    <title>Registro</title>
+</head>
+
+<body>
+
+    <div class="container" id="main">
+        <div class="sign-up">
+            <form action="#">
+                <a href="./index.html" class="return btn-return"><i class="fa-solid fa-arrow-left"></i></a>
+                <h1>Crear cuenta</h1>
+                <div class="social-container">
+                    <a href="" class="social"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="social"><i class="fa-brands fa-github"></i></a>
+                    <a href="" class="social"><i class="fa-brands fa-google"></i></a>
+                    <a href="" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>O use su email para registrarse</p>
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre" autocomplete="name" required>
+                <input type="email" name="email" id="email" placeholder="Ingrese su email" autocomplete="email" required>
+                <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+
+        <div class="sign-in">
+            <form action="#">
+                <a href="./index.html" class="return return-In"><i class="fa-solid fa-arrow-left"></i></a>
+                <h1>Iniciar sesión</h1>
+                <div class="social-container">
+                    <a href="" class="social"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="social"><i class="fa-brands fa-github"></i></a>
+                    <a href="" class="social"><i class="fa-brands fa-google"></i></a>
+                    <a href="" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>O use su email:</p>
+                <input type="email" name="email" id="emailIn" placeholder="Ingrese su email" autocomplete="email"
+                    required>
+                <input type="password" name="password" id="passwordIn" placeholder="Ingrese su contraseña" required>
+                <button type="submit">Iniciar sesión</button>
+                <a href="">¿Olvidaste tu contraseña?</a>
+                <!-- <a href="" class="create">Crear cuenta</a> -->
+            </form>
+        </div>
+
+
+        <div class="card-container">
+
+            <div class="card">
+                <div class="card-left">
+                    <h1>¡Bienvenido de regreso!</h1>
+                    <p>Es un gusto tenerte de regreso en la comunidad de conferencistas de diseño y desarrollo
+                        web más grande del continente
+                    </p>
+                    <button type="button" id="signUp">Registrarse</button>
+                </div>
+
+                <div class="card-right">
+                    <h1>¡Hola, amante de la web!</h1>
+                    <p>¡Sé bienvenido a la comunidad más grande de conferencistas de diseño y desarrollo
+                        web del continente! Registrate y sé parte de nosotros
+                    </p>
+                    <button type="button" id="signIn">Iniciar sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

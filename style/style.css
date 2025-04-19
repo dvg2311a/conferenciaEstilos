@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --bg-color: #293f50;
+    --title: #ffff;
+    --subtitle: #5e807b;
+    --p-color: #91bfb8;
+    --font-prin: "Lato", sans-serif;
+}
+
+
+/* !BIENVENIDA */
+
+#welcome {
+    display: inline-block;
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    background: var(--bg-color);
+    margin-bottom: 5px;
+}
+
+/* !BARRA DE NAVEGACIÓN */
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style: none;
+    padding-top: 7px;
+    margin-right: 10px;
+}
+
+.menu .submenu {
+    position: relative;
+    font-family: var(--font-prin);
+    font-size: 1.4rem;
+    color: var(--title);
+    padding: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: all .3s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu .submenu:hover {
+    background: var(--title);
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--bg-color);
+    border-radius: 4px;
+    transition: all 400ms;
+    transform: scale(1.8);
+    
+}
+
+
+/* !MENU RESPONSIVE */
+#welcome nav .menu-responsive{
+    /* position: absolute; */
+    display: none;
+}
+
+#welcome nav .btn-menu-responsive{
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    padding: 5px;
+    position: relative;
+    top: 5;
+    left: 25px;
+    border: solid 2px var(--p-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    transform: rotate(90deg); 
+}
+
+.menu-responsive:hover > .content-nav-responsive{
+    left: -1px;
+    transition: all 1.5s;
+}
+
+.content-nav-responsive{
+    width: 150px;
+    height: 250px;
+    background-color: var(--subtitle);
+    border-radius: 10px;
+    display: block;
+    position: relative;
+    z-index: 30;
+    top: 5;
+    left: -1000px;
+    transition: all 1s;
+}
+
+.content-nav-responsive li{
+    width: 150px;
+    height: 45px;
+    font-family: var(--font-prin);
+    font-size: 1.5rem;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-nav-responsive li a{
+    color: var(--title);
+    text-decoration: none;
+}
+
+.content-nav-responsive li a:focus{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms;
+}
+
+
+
+/* !CONTENIDO DE BIENVENIDA */
+.content-welcome {
+    margin-top: 3px;
+}
+
+.content-welcome h1 {
+    font-family: var(--font-prin);
+    font-weight: 100;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    margin-top: 4%;
+    margin-bottom: 6%;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--title);
+
+}
+
+
+.content-welcome h2 {
+    text-align: center;
+    font-family: var(--font-prin);
+    font-weight: 300;
+    font-size: 3.5rem;
+    color: var(--subtitle);
+    margin-bottom: 15px;
+}
+
+.content-welcome p {
+    text-align: center;
+    font-family: var(--font-prin);
+    font-size: 2.3rem;
+    line-height: 4.6rem;
+    color: var(--title);
+}
+
+.content-welcome .btn {
+    display: block;
+    position: relative;
+    font-family: var(--font-prin);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin: 25px 0 40px 41.9%;
+    padding: 5px;
+    padding-top: 21.9px;
+    font-size: 2rem;
+    height: 70px;
+    width: 250px;
+    color: var(--title);
+    border: var(--title) 1px solid;
+    border-radius: 9px;
+    transition: all .3s;
+}
+
+.content-welcome .btn:hover {
+    background: var(--title);
+    color: var(--subtitle);
+    transition: all 400ms;
+}
+
+.content-welcome .btn:focus {
+    background: none;
+    color: var(--title);
+}
+
+
+
+/* !SECTION CARDS */
+
+.section-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+
+
+}
+
+/* *CARDS */
+.section-card .cards {
+    width: 300px;
+    height: 370px;
+    padding: 35px;
+    margin-bottom: 8%;
+    transition: all .2s;
+    border-radius: 13px;
+}
+
+.section-card .cards:hover {
+    border: #5e807b solid 1px;
+    border-radius: 13px;
+    background: var(--bg-color);
+    transform: scale(1.11) translate3d(0, 0, 0);
+    transition: all 400ms;
+    color: var(--title);
+
+    & .content-cards h3{
+        color: var(--title);
+    }
+
+}
+
+img {
+    position: relative;
+    right: 5%;
+    width: 110%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.section-card .cards .content-cards h3 {
+    font-family: var(--font-prin);
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: start;
+    color: var(--subtitle);
+    padding: 12px 0;
+
+}
+
+.section-card .cards .content-cards p {
+    font-family: var(--font-prin);
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: justify;
+    color: var(--p-color);
+}
+
+
+
+
+
+/* !FOOTER */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+    background: var(--bg-color);
+
+}
+
+.footer-cont p,
+.footer-cont2 p {
+    display: block;
+    position: relative;
+    padding: 5px;
+    margin: 20px 5px 7px 10px;
+    font-family: var(--font-prin);
+    font-size: 1.9rem;
+    color: var(--p-color);
+    font-weight: 300;
+}
+
+
+
+
+.footer-cont span {
+    font-weight: 100;
+    color: var(--title);
+}
+
+
+
+
+/* !MEDIA QUERIES */
+
+/* *TABLET */
+
+@media screen and (max-width:800px) {
+
+    /* !WELCOME */
+    #welcome {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #welcome .menu {
+        margin-top: 7px;
+        justify-content: center;
+        /* border: beige 2px solid; */
+    }
+
+    #welcome .menu .submenu {
+        position: relative;
+
+    }
+
+    #welcome .content-welcome {
+        width: 100%;
+    }
+
+    #welcome .content-welcome h1 {
+        font-size: 3.5rem;
+        margin-top: 45px;
+
+    }
+
+    #welcome .content-welcome h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #welcome .content-welcome p {
+        font-size: 2rem;
+    }
+
+    #welcome .content-welcome .btn {
+        width: 190px;
+        position: relative;
+        left: -34px;
+
+    }
+
+
+    .section-card .card-3 {
+        justify-content: start;
+    }
+
+    .footer {
+        justify-content: space-between;
+    }
+
+}
+
+/* *MOBILE */
+
+@media screen and (max-width:600px) {
+
+    #welcome {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #welcome .menu{
+        display: none;
+    }
+
+    #welcome nav .menu-responsive{
+        display: block;
+        position: absolute;
+        width: 90px;
+    }
+
+    #welcome .content-welcome{
+        width: 100%;
+    }
+
+    #welcome .content-welcome .btn{
+        width: 180px;
+       left:-64px;
+    }
+
+   
+   .footer .footer-cont, .footer-cont2{
+    width: 190px;
+    font-size: 1rem;
+   }
+}
